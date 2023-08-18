@@ -4,9 +4,17 @@
 <listeners>
 	<listener class-name="listeners.ListenersClass"></listener>
 </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test-1">
     <classes>
-      <class name="QAFox.ECommerce.App2Test"/>
+      <class name="QAFox.ECommerce.AppTest"/>
+      <class name="QAFox.ECommerce.AppTest2"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Test-2">
+    <classes>
+      <class name="QAFox.ECommerce.AppTest3"/>
+      <class name="QAFox.ECommerce.App2Test4"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
