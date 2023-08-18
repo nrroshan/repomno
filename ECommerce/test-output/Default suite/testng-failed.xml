@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="QAFox.ECommerce.AppTest4">
+=======
+      <class name="QAFox.ECommerce.AppTest3">
+>>>>>>> snravindraRevamp
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="testApp"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- QAFox.ECommerce.AppTest4 -->
+=======
+      </class> <!-- QAFox.ECommerce.AppTest3 -->
+>>>>>>> snravindraRevamp
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
