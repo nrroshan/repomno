@@ -6,6 +6,7 @@ import genericScripts.LaunchCloseBrowser;
 import pom.HomePage;
 import pom.LandingPage;
 import pom.LoginPage;
+import pom.ProductsPage;
 import pom.RegisterPage;
 
 public class AppTest3 extends LaunchCloseBrowser
@@ -15,6 +16,8 @@ public class AppTest3 extends LaunchCloseBrowser
     {
     	LandingPage landingPage = new LandingPage(driver);
     	landingPage.clickProductsLink();
-    	landingPage.fetchProductDetails();
+    	
+    	ProductsPage productsPage = new ProductsPage(driver);
+    	productsPage.fetchProductDetails();
     }
 }

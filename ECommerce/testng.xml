@@ -14,7 +14,7 @@
     <test thread-count="5" name="Test-2">
     <classes>
       <class name="QAFox.ECommerce.AppTest3"/>
-      <class name="QAFox.ECommerce.App2Test4"/>
+      <class name="QAFox.ECommerce.AppTest4"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
