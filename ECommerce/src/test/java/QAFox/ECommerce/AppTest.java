@@ -20,6 +20,6 @@ public class AppTest extends LaunchCloseBrowser
     	loginPage.clickLoginButton();
     	
     	HomePage homePage = new HomePage(driver);
-    	homePage.clickLogoutLink();
+    	homePage.verifyLogin();
     }
 }
