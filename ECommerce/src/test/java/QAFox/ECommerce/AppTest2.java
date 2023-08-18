@@ -6,8 +6,9 @@ import genericScripts.LaunchCloseBrowser;
 import pom.HomePage;
 import pom.LandingPage;
 import pom.LoginPage;
+import pom.RegisterPage;
 
-public class AppTest extends LaunchCloseBrowser
+public class AppTest2 extends LaunchCloseBrowser
 {
     @Test
     public void testApp() throws Exception
@@ -16,10 +17,20 @@ public class AppTest extends LaunchCloseBrowser
     	landingPage.clickLoginLink();
     	
     	LoginPage loginPage = new LoginPage(driver);
+    	loginPage.enterEmailPasswordForSignUp();
+    	loginPage.clickSignUpButton();
+    	
+    	RegisterPage registerPage = new RegisterPage(driver);
+    	registerPage.enterUserDetails();
+    	registerPage.verifyAccountCreatedAndLogout();
+    	
+    	loginPage = new LoginPage(driver);
     	loginPage.enterEmailPasswordForLogin();
     	loginPage.clickLoginButton();
     	
     	HomePage homePage = new HomePage(driver);
-    	homePage.clickLogoutLink();
+    	homePage.verifyLogin();
+    	homePage.deleteAccount();
+    	homePage.verifyAccountDeleted();
     }
 }

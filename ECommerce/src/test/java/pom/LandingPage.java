@@ -10,6 +10,9 @@ public class LandingPage {
 	
 	@FindBy(css="ul.nav.navbar-nav li:nth-child(4) a")
 	private WebElement loginLink;
+	
+	@FindBy(css="ul.nav.navbar-nav li:nth-child(8) a")
+	private WebElement contactUsLink;
 
 	public LandingPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -19,6 +22,12 @@ public class LandingPage {
 	public void clickLoginLink() throws Exception
 	{
 		loginLink.click();
+		Thread.sleep(2000);
+	}
+	
+	public void clickContactUsLink() throws Exception
+	{
+		contactUsLink.click();
 		Thread.sleep(2000);
 	}
 }
